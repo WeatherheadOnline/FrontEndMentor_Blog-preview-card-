@@ -25,8 +25,8 @@ article {
     max-width: calc(88vw - var(--spacing300) * 2);  /* to limit width on mobile */
     margin: 0 auto;
     padding: var(--spacing300);
-    -ms-transform: translateY(calc(50vh - 55%)); /* half the page, minus half the card's height */
     transform: translateY(calc(50vh - 55%)); /* half the page, minus half the card's height */
+    -ms-transform: translateY(calc(50vh - 55%)); /* half the page, minus half the card's height */
     border-radius: 1.6rem;
     background-color: var(--white);
     outline: calc(var(--spacing50)/2) solid var(--gray-950);
@@ -50,24 +50,23 @@ article {
         aspect-ratio: 7/5;
     }
 }
-.card-content {
+.card-content, .card-content > div {
     display: flex;
     flex-direction: column;
     gap: calc(var(--spacing100) * 2);
-}
-.card-content > div {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--spacing100) * 2);
-}
-.card p, .card h3 {
-    margin: 0;
 }
 .card-category {
     width: max-content;
     background-color: var(--yellow);
     padding: calc(var(--spacing50) * 1.5) var(--spacing150);
     border-radius: var(--spacing50);
+}
+.card-title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+.card p, .card h3 {
+    margin: 0;
 }
 .card-author {
     display: flex;
