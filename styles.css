@@ -1,0 +1,108 @@
+:root {
+    --yellow: #F4D04E;
+    --gray-950: #111111;
+    --gray-500: #6B6B6B;
+    --white: #FFFFFF;
+    --spacing300: 2.4rem;
+    --spacing150: 1.2rem;
+    --spacing100: 0.8rem;
+    --spacing50: 0.4rem; 
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    /* font weights "Medium"/500 & "Extra Bold"/800 */
+    font-style: normal;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing300);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 2.4rem;
+    width: calc(38.4rem - var(--spacing300));  /* remove padding */
+    margin: 0 auto;
+    outline: calc(var(--spacing50)/2) solid var(--gray-950);
+    box-shadow: var(--spacing150) var(--spacing150) var(--gray-950);
+    padding: var(--spacing300);
+    letter-spacing: 0;
+}
+
+.card-image {
+    /* width: calc(100% - var(--spacing300) *2); */
+    width: 100%;
+  height: 20rem;
+  background-image: url(./assets/images/illustration-article.svg);
+  background-size: cover;
+  border-radius: 1.2rem;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing300);
+}
+
+.card p, .card h3 {
+    margin: 0;
+}
+.card-category {
+    width: max-content;
+    background-color: var(--yellow);
+    padding: var(--spacing100);
+    border-radius: var(--spacing100);
+}
+.card-publish-date {
+
+}
+.card-title {
+
+}
+.card-description {
+
+}
+.card-author {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing150);
+    align-items: center;
+}
+.card-author img {
+    height: calc(var(--spacing150)*3);
+    width: auto;
+}
+
+.card-author-name {
+
+}
+
+
+.text-preset-1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.text-preset-2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+.text-preset-3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.text-preset-3-bold {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: #3e52a3; }
