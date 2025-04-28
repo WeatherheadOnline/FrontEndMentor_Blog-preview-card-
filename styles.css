@@ -27,8 +27,8 @@ article {
     max-width: var(--card-width-mobile);  /* to limit width on mobile */
     margin: 0 auto;
     padding: var(--spacing300);
-    transform: translateY(calc(50vh - 55%)); /* half the page, minus half the card's height */
-    -ms-transform: translateY(calc(50vh - 55%)); /* half the page, minus half the card's height */
+    transform: translateY(calc(50vh - 50%)); /* half the page, minus half the card's height */
+    -ms-transform: translateY(calc(50vh - 50%)); /* half the page, minus half the card's height */
     border-radius: 1.6rem;
     background-color: var(--white);
     outline: calc(var(--spacing50)/2) solid var(--gray-950);
