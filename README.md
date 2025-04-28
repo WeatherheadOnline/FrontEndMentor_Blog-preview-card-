@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/flexbox-spacing-on-a-blog-preview-card--187lTid8R)
 - Live Site URL: [https://weatherheadonline.github.io/FrontEndMentor_Blog-preview-card-/](https://weatherheadonline.github.io/FrontEndMentor_Blog-preview-card-/)
 
 ## My process
@@ -40,7 +40,7 @@ I started by visually breaking the page into separate elements and creating html
 
 I initially had some trouble getting the image to look consistent on a range of smartphone and tablet screens. The image's width was set to 100% of the container width, and I was controlling the height based on the image's representation in the design file. However, variety of card element widths on mobile devices precluded using `min()` or `max()` to set the image height. Since I needed distinctly different aspect ratios for desktop vs mobile, I ended up using a media query.
 
-Decreasing the font size on mobile without using media queries was challenging. I researched how others had approached the problem. Consequently I researched `clamp()` and was able to use this approach to solve the problem.
+Decreasing the font size on mobile without using media queries was challenging. I researched how others had approached the problem. Consequently I researched `clamp()`, although I eventually used `min()`.
 
 ### Built with
 
@@ -50,7 +50,7 @@ Decreasing the font size on mobile without using media queries was challenging. 
 
 ### What I learned
 
-This challenge taught me to use `clamp()`, and to be open to using alternatives to media queries. I also gained valuable experience in creating consistent results across different screen sizes and types, using a combination of `min()` / `max()`, `rem` units, and viewport width units.
+This challenge taught me about the `clamp()` function, and to be open to using alternatives to media queries. I also gained valuable experience in creating consistent results across different screen sizes and types, using a combination of `min()` / `max()`, `rem` units, and viewport width units.
 
 ### Continued development
 
