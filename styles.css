@@ -7,6 +7,8 @@
     --spacing150: 1.2rem;
     --spacing100: 0.8rem;
     --spacing50: 0.4rem; 
+    --card-width-desktop: calc(38.4rem - var(--spacing300) * 2); /* remove padding from each side */
+    --card-width-mobile: calc(88vw - var(--spacing300) * 2)
 }
 html {font-size: 10px;}
 body {
@@ -21,8 +23,8 @@ article {
     gap: var(--spacing300);
 }
 .card {
-    width: calc(38.4rem - var(--spacing300) * 2);  /* remove padding */
-    max-width: calc(88vw - var(--spacing300) * 2);  /* to limit width on mobile */
+    width: var(--card-width-desktop);  
+    max-width: var(--card-width-mobile);  /* to limit width on mobile */
     margin: 0 auto;
     padding: var(--spacing300);
     transform: translateY(calc(50vh - 55%)); /* half the page, minus half the card's height */
