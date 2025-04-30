@@ -23,6 +23,7 @@ article {
     gap: var(--spacing300);
 }
 .card {
+    box-sizing: border-box;
     width: var(--card-width-desktop);  
     max-width: var(--card-width-mobile);  /* to limit width on mobile */
     margin: 0 auto;
@@ -77,7 +78,7 @@ article {
     align-items: center;
 }
 .card-author img {
-    height: calc(var(--spacing150)*3);
+    height: 2.88rem;
     width: auto;
 }
 .text-preset-1 {
@@ -95,7 +96,7 @@ article {
     font-weight: 500;
 }
 .text-preset-3-bold {
-    font-size: min(1.4rem, 4vw);
+    font-size: min(1.3rem, 4vw);
     font-weight: 800;
 }
 .attribution { 
