@@ -23,7 +23,6 @@ article {
     gap: var(--spacing300);
 }
 .card {
-    box-sizing: border-box;
     width: var(--card-width-desktop);  
     max-width: var(--card-width-mobile);  /* to limit width on mobile */
     margin: 0 auto;
@@ -78,7 +77,7 @@ article {
     align-items: center;
 }
 .card-author img {
-    height: 2.88rem;
+    height: 3rem;
     width: auto;
 }
 .text-preset-1 {
